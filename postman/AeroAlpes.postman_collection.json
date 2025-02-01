@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "218eddf0-482d-4327-871e-6c2c9f305510",
+		"name": "AeroAlpes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1347256"
+	},
+	"item": [
+		{
+			"name": "local",
+			"item": [
+				{
+					"name": "health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{AEROALPES_API_BASE_URL}}/health",
+							"host": [
+								"{{AEROALPES_API_BASE_URL}}"
+							],
+							"path": [
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fligh book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{AEROALPES_API_BASE_URL}}/vuelos/reserva/a450bc90-7d47-49a8-a948-80fb04f8a89e",
+							"host": [
+								"{{AEROALPES_API_BASE_URL}}"
+							],
+							"path": [
+								"vuelos",
+								"reserva",
+								"a450bc90-7d47-49a8-a948-80fb04f8a89e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "flight book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"itinerarios\": [\n        {\n            \"odos\": [\n                {\n                    \"segmentos\": [\n                        {\n                            \"legs\": [\n                                {\n                                    \"fecha_salida\": \"2024-11-22T13:10:00Z\",\n                                    \"fecha_llegada\": \"2024-11-22T15:10:00Z\",\n                                    \"destino\": {\n                                        \"codigo\": \"JFK\",\n                                        \"nombre\": \"John F. Kennedy International Airport\"\n                                    },\n                                    \"origen\": {\n                                        \"codigo\": \"BOG\",\n                                        \"nombre\": \"El Dorado - Bogotá International Airport (BOG)\"\n                                    }\n\n                                }\n                            ]\n                        }\n                    ]\n                }\n\n            ]\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{AEROALPES_API_BASE_URL}}/vuelos/reserva",
+							"host": [
+								"{{AEROALPES_API_BASE_URL}}"
+							],
+							"path": [
+								"vuelos",
+								"reserva"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "AEROALPES_API_BASE_URL",
+			"value": "http://localhost:3001",
+			"type": "string"
+		}
+	]
+}
