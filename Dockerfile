@@ -21,5 +21,4 @@ EXPOSE 5000
 
 COPY ./docker/start.sh /start.sh
 RUN chmod +x /start.sh
-
-CMD ["/start.sh"]
+CMD ["make", "run-docker"]
