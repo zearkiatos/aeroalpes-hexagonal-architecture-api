@@ -1,3 +1,10 @@
+# Description
+This is a code build with an Hexagonal architecture ⬣. API Aeroalpes ✈️ is an software service to searching an buy flights
+
+# Made with
+[![Python](https://img.shields.io/badge/python-2b5b84?style=for-the-badge&logo=python&logoColor=white&labelColor=000000)]()
+[![Flask](https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white&labelColor=000000)]()
+
 # Tutorial 3 - Arquitectura Hexagonal
 
 Repositorio con código base para el desarrollo de una arquitectura hexagonal siguiendo los principios y patrones de DDD.
