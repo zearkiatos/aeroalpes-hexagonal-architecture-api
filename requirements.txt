@@ -18,3 +18,8 @@ PyYAML==6.0.1
 SQLAlchemy==1.4.44
 tomli==2.0.1
 Werkzeug==2.2.2
+faker
+python-dotenv==1.0.0
+cryptography==43.0.3
+pycryptodome==3.21.0
+bcrypt

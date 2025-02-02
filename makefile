@@ -26,7 +26,7 @@ else
 endif
 
 run-tests:
-	coverage run -m pytest
+	FLASK_ENV=test coverage run -m pytest
 
 run-tests-coverage:
 	 make run-tests
